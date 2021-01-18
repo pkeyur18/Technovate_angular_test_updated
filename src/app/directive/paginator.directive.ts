@@ -12,7 +12,7 @@ export class PaginatorDirective {
   next:number = 11;
   current:number = 10;
 
-  constructor(private renderer: Renderer2, private el: ElementRef) { }
+  constructor() { }
 
   nextPage() {
     this.setPage(Math.min(this.totalPage, this.pageNumber + 1));
@@ -30,7 +30,6 @@ export class PaginatorDirective {
 
   setPage(pageNumber: number) {
     this.pageNumber = pageNumber;
-    this.renderer.setProperty(this.el.nativeElement, 'value', pageNumber);
     this.current = this.pageNumber;
     this.previous = this.current - 1;
     this.next = this.current + 1;
