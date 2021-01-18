@@ -1,0 +1,31 @@
+.container {
+  text-align: center;
+  font-size: 18px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.block {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  margin: 15px;
+  width: 250px;
+  height: 150px;
+}
+
+li {
+    cursor: pointer;
+    margin: 0 4px;
+    width: 70px;
+}
