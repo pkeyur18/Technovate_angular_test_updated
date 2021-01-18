@@ -12,7 +12,7 @@
       <li class="page-item"><a class="page-link" (click)="appPagination.firstPage()" [hidden]="appPagination.previous==0"> First </a></li>
       <li class="page-item"><a class="page-link" (click)="appPagination.previousPage()" [hidden]="appPagination.previous==0">&laquo; {{appPagination.previous}}</a>
       </li>
-      <li class="page-item"><a class="page-link" appPaginator #appPagination="appPagination" min="1" max="20"
+      <li class="page-item active"><a class="page-link" appPaginator #appPagination="appPagination" min="1" max="20"
           [totalPage]="50" [pageNumber]="10" value="10">{{appPagination.current}}</a></li>
       <li class="page-item"><a class="page-link" (click)="appPagination.nextPage()" [hidden]="appPagination.next==appPagination.totalPage+1">{{appPagination.next}} &raquo;</a></li>
       <li class="page-item"><a class="page-link" (click)="appPagination.lastPage()" [hidden]="appPagination.next==appPagination.totalPage+1"> Last </a></li>
